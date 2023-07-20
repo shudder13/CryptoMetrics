@@ -1,1 +1,0 @@
-cryptocompare_api_key = 'fcb6d168a56307aa9706cbcc30eef273ca808d66916c7fea285d26392f5fe2b2'
