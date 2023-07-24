@@ -1,5 +1,5 @@
 {
-  "name": "cryptoScope",
+  "name": "cryptoMetrics",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -44,5 +44,5 @@
     "vite": "^4.3.9",
     "vitest": "^0.32.2"
   },
-  "description": "An Ionic project"
+  "description": "CryptoMetrics - The Pulse of Crypto"
 }
