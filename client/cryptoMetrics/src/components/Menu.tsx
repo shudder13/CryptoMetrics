@@ -10,7 +10,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { AppPage, appPages } from '../properties/MenuProperties';
+import { appPages } from '../properties/MenuProperties';
 import './Menu.css';
 
 

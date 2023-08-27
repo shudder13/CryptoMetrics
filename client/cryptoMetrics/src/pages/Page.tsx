@@ -1,16 +1,17 @@
-import { IonButtons, IonCard, IonContent, IonHeader, IonItem, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonItem, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { useParams } from 'react-router';
 import './Page.css';
+import cryptoMetricsLogo from '../assets/logo.svg';
+import { pageComponents } from '../constants/PageComponents';
 
 const Page: React.FC = () => {
 
   const { name } = useParams<{ name: string; }>();
-  const pageTitles = {
-    'Bitcoin-logarithmic-regression': 'Bitcoin Logarithmic Regression',
-    'Ethereum-logarithmic-regression': 'Ethereum Logarithmic Regression'
-  };
 
-  const pageTitle = pageTitles[name as keyof typeof pageTitles];
+  const page = pageComponents.find((page) => page.url === name);
+
+  const pageTitle = page!.title;
+  const PageComponent = page!.component;
 
   return (
     <IonPage>
@@ -19,7 +20,10 @@ const Page: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>{pageTitle}</IonTitle>
+          <IonItem>
+          <IonTitle size="small">{pageTitle}</IonTitle>
+            <img src={cryptoMetricsLogo} alt="CryptoMetrics logo" slot="end" className='logo'/>
+          </IonItem>
         </IonToolbar>
       </IonHeader>
 
@@ -29,6 +33,10 @@ const Page: React.FC = () => {
             <IonTitle size="large">{pageTitle}</IonTitle>
           </IonToolbar>
         </IonHeader>
+
+        <IonContent>
+          <PageComponent />
+        </IonContent>
       </IonContent>
     </IonPage>
   );

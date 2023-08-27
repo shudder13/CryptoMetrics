@@ -22,8 +22,8 @@ const appPages: AppPage[] = [
       mdIcon: statsChartSharp,
       subPages: [
         {
-          title: 'Modern Portfolio Theory',
-          url: '/page/modern-portfolio-theory',
+          title: 'Modern Portfolio Analysis', // TODO refactoring
+          url: '/page/modern-portfolio-analysis',
         }
       ]
     },
@@ -32,78 +32,17 @@ const appPages: AppPage[] = [
       svgIcon: bitcoinLogo,
       subPages: [
         {
-          title: 'Bitcoin Logarithmic Regression',
+          title: 'Bitcoin logarithmic regression',
           url: '/page/Bitcoin-logarithmic-regression',
         },
         {
-          title: 'Bitcoin Monthly Returns',
+          title: 'Bitcoin monthly returns',
           url: '/page/Bitcoin-monthly-returns',
         },
         {
-          title: 'Year-to-Date ROI',
-          url: '/page/year-to-date-roi'
+          title: 'Bitcoin Year-To-Date ROI',
+          url: '/page/Bitcoin-ytd-roi'
         },
-        {
-          title: 'Running 1 Year ROI',
-          url: '/page/running-1-year-roi',
-        },
-        {
-          title: 'Liveliness',
-          url: '/page/liveliness',
-        },
-        {
-          title: 'Addresses with balance ≥ 0.01',
-          url: '/page/addresses-with-balance-gte-0-01',
-        },
-        {
-          title: 'Addresses with balance ≥ 0.1',
-          url: '/page/addresses-with-balance-gte-0-1',
-        },
-        {
-          title: 'Addresses with balance ≥ 1',
-          url: '/page/addresses-with-balance-gte-1',
-        },
-        {
-          title: 'Addresses with balance ≥ 10',
-          url: '/page/addresses-with-balance-gte-10',
-        },
-        {
-          title: 'Addresses with balance ≥ 100',
-          url: '/page/addresses-with-balance-gte-100',
-        },
-        {
-          title: 'Addresses with balance ≥ 1k',
-          url: '/page/addresses-with-balance-gte-1k',
-        },
-        {
-          title: 'Addresses with balance ≥ 10k',
-          url: '/page/addresses-with-balance-gte-10k',
-        },
-        {
-          title: 'Addresses wave',
-          url: '/page/addresses-wave',
-        },
-        {
-          title: 'Number of whales',
-          url: '/page/number-of-whales',
-        },
-        {
-          title: 'Hodler net position change',
-          url: '/page/hodler-net-position-change',
-        },
-        {
-          title: 'Miner net position change',
-          url: '/page/miner-net-position-change',
-        },
-        {
-          title: 'Miner balance',
-          url: '/page/miner-balance',
-        },
-        {
-          title: 'Exchange netflow volume',
-          url: '/page/exchange-netflow-volume',
-        },
-  
         // adrese cu balante peste 10k, 1k, 100, 10, 1, 0.1, 0.01 si eventual wave-ul acela, number of whales, hodler net position change
         // miner net position change, miner balance, exchange netflow volume, 
       ]
@@ -115,11 +54,11 @@ const appPages: AppPage[] = [
       mdIcon: cashSharp,
       subPages: [
         {
-          title: 'Ethereum Logarithmic Regression',
+          title: 'Ethereum logarithmic regression',
           url: '/page/Ethereum-logarithmic-regression',
         },
         {
-          title: 'Ethereum Monthly Returns',
+          title: 'Ethereum monthly returns',
           url: '/page/Ethereum-monthly-returns',
         },
       ]

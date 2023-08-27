@@ -11,4 +11,4 @@ price_history_blueprint.register_blueprint(crypto_price_history_blueprint)
 def get_crypto_price_history(symbol: str):
     cryptocompare_api_key = current_app.config['CRYPTOCOMPARE_API_KEY']
     price_history = services.get_crypto_price_history(cryptocompare_api_key=cryptocompare_api_key, symbol=symbol)
-    return price_history  # TODO
+    return price_history
