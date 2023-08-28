@@ -62,7 +62,7 @@ const ModernPortfolioAnalysis: React.FC = () => {
     },
     yAxis: {
       title: {
-        text: 'Expected Return (%)',
+        text: 'Expected Return (%) in the next 365 days',
       },
       gridLineColor: 'rgba(128, 128, 128, 0.15)'
     },
