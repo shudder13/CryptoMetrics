@@ -16,7 +16,6 @@ const BitcoinLogarithmicRegression: React.FC = () => {
   const [regressionData, setRegressionData] = useState<any[]>([]);
   const [showHalvingDates, setShowHalvingDates] = useState<boolean>(false);
   
-
   useEffect(() => {
     axios.get("http://localhost:5000/api/price-history/crypto/BTC")
       .then(response => {
@@ -82,7 +81,7 @@ const BitcoinLogarithmicRegression: React.FC = () => {
         text: 'Price ($)'
       },
       type: 'logarithmic',
-      gridLineColor: 'rgba(128, 128, 128, 0.15)'
+      gridLineColor: 'rgba(128, 128, 128, 0.05)'
     },
     series: [
       {

@@ -44,7 +44,6 @@ const ModernPortfolioAnalysis: React.FC = () => {
     }));
 
     setChartData(convertedData);
-    
   }, [portfolioSimulations]);
 
   const options: Highcharts.Options = {
@@ -64,7 +63,7 @@ const ModernPortfolioAnalysis: React.FC = () => {
       title: {
         text: 'Expected Return (%) in the next 365 days',
       },
-      gridLineColor: 'rgba(128, 128, 128, 0.15)'
+      gridLineColor: 'rgba(128, 128, 128, 0.05)'
     },
     series: [
       {
@@ -107,12 +106,16 @@ const ModernPortfolioAnalysis: React.FC = () => {
         <IonCardContent className="description-card">
           <h2>Description</h2>
           <div>
+              Modern Portfolio Analysis is a quantitative method used in finance to assess and optimize investment portfolios. It involves the evaluation of various assets, including cryptocurrencies like Bitcoin and Ethereum, to determine the most efficient allocation that balances risk and return.
           </div>
           <div>
+              The primary objective of Modern Portfolio Analysis is to create a diversified portfolio that maximizes potential returns for a given level of risk or minimizes risk for a desired level of return. This analysis takes into account the correlations between different assets and seeks to find the optimal allocation that achieves the best risk-return trade-off.
           </div>
           <div>
+              Modern Portfolio Analysis is based on the principles of the Efficient Frontier and Capital Asset Pricing Model (CAPM), aiming to achieve the highest level of return for a given level of risk exposure in the context of various assets, including cryptocurrencies like Bitcoin and Ethereum.
           </div>
           <div>
+              By considering the historical performance and interactions among different assets, this approach aids investors in making informed decisions, constructing well-balanced portfolios, and achieving their financial goals across a diverse range of investment options.
           </div>
         </IonCardContent>
       </IonCard>

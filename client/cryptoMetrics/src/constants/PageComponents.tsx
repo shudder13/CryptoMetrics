@@ -1,6 +1,5 @@
 import BitcoinLogarithmicRegression from '../pages/Bitcoin/BitcoinLogarithmicRegression';
-import BitcoinMonthlyReturns from '../pages/Bitcoin/BitcoinMonthlyReturns';
-import BitcoinYTDROI from '../pages/Bitcoin/BitcoinYTDROI';
+import BitcoinPiCycleTops from '../pages/Bitcoin/BitcoinPiCycleTops';
 import EthereumLogarithmicRegression from '../pages/Ethereum/EthereumLogarithmicRegression';
 import ModernPortfolioAnalysis from '../pages/Generic/ModernPortfolioTheory';
 
@@ -26,15 +25,9 @@ export const pageComponents: PageComponent[] = [
     },
     {
         parent: 'Bitcoin',
-        title: 'Bitcoin Monthly Returns',
-        url: 'Bitcoin-monthly-returns',
-        component: BitcoinMonthlyReturns
-    },
-    {
-        parent: 'Bitcoin',
-        title: 'Bitcoin Year-To-Date ROI',
-        url: 'Bitcoin-ytd-roi',
-        component: BitcoinYTDROI
+        title: 'Bitcoin Pi Cycle tops',
+        url: 'Bitcoin-pi-cycle-tops',
+        component: BitcoinPiCycleTops
     },
     {
         parent: 'Ethereum',

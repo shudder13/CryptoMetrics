@@ -1,4 +1,4 @@
-import { statsChartOutline, statsChartSharp, cashOutline, cashSharp, globeOutline, globeSharp, logoEuro, trendingUpOutline, trendingUpSharp } from "ionicons/icons";
+import { statsChartOutline, statsChartSharp, cashOutline, cashSharp } from "ionicons/icons";
 import bitcoinLogo from '../assets/Bitcoin-logo.svg';
 import ethereumLogo from '../assets/Ethereum-logo.svg';
 
@@ -36,15 +36,9 @@ const appPages: AppPage[] = [
           url: '/page/Bitcoin-logarithmic-regression',
         },
         {
-          title: 'Bitcoin monthly returns',
-          url: '/page/Bitcoin-monthly-returns',
+          title: 'Bitcoin Pi Cycle tops',
+          url: '/page/Bitcoin-pi-cycle-tops'
         },
-        {
-          title: 'Bitcoin Year-To-Date ROI',
-          url: '/page/Bitcoin-ytd-roi'
-        },
-        // adrese cu balante peste 10k, 1k, 100, 10, 1, 0.1, 0.01 si eventual wave-ul acela, number of whales, hodler net position change
-        // miner net position change, miner balance, exchange netflow volume, 
       ]
     },
     {
@@ -57,43 +51,6 @@ const appPages: AppPage[] = [
           title: 'Ethereum logarithmic regression',
           url: '/page/Ethereum-logarithmic-regression',
         },
-        {
-          title: 'Ethereum monthly returns',
-          url: '/page/Ethereum-monthly-returns',
-        },
-      ]
-    },
-    {
-      title: 'Macroeconomics',
-      iosIcon: globeOutline,
-      mdIcon: globeSharp,
-      subPages: [
-        {
-          title: '',
-          url: '',
-        }
-      ]
-    },
-    {
-      title: 'Foreign exchange',
-      iosIcon: logoEuro,
-      mdIcon: logoEuro,
-      subPages: [
-        {
-          title: '',
-          url: '',
-        }
-      ]
-    },
-    {
-      title: 'Stocks',
-      iosIcon: trendingUpOutline,
-      mdIcon: trendingUpSharp,
-      subPages: [
-        {
-          title: '',
-          url: '',
-        }
       ]
     },
   ];

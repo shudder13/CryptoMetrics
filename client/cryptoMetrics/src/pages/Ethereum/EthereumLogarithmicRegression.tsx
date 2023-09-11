@@ -81,7 +81,7 @@ const EthereumLogarithmicRegression: React.FC = () => {
         text: 'Price ($)'
       },
       type: 'logarithmic',
-      gridLineColor: 'rgba(128, 128, 128, 0.15)'
+      gridLineColor: 'rgba(128, 128, 128, 0.05)'
     },
     series: [
       {
